@@ -1,4 +1,71 @@
 .me-img{
-    width: 100%;
+    width: 250px;
+    height: auto;
     border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.greeting{
+    font-size: 1.4rem;
+    padding-top: .7rem;
+}
+.name{
+    font-size: 2rem;
+    padding-top: .5rem;
+}
+.occupation{
+    font-size: 1.6rem;
+    padding-top: .5rem;
+}
+.description{
+    font-size: 1.1rem;
+}
+.section-education{
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+    text-align: center;
+}
+.ut-img{
+    width: 250px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.career{
+    padding-top: 1rem;
+}
+.career > h4{
+    font-size: 1.3rem;
+}
+.emoji{
+    font-size: 2.4rem;
+}
+.section-tecnologies{
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    font-size: 1.1rem;
+    text-align: center;
+}
+.section-tecnologies > .container > *{
+    padding-top: .7rem;
+    padding-bottom: .7rem;
+}
+.tecnologie-name-react{
+    padding-top: .6rem;
+}
+.angular-img{
+    width: 100px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.react-img{
+    width: 100px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
