@@ -25,8 +25,8 @@
     color: var(--color-primary);
     text-align: center;
 }
-h3 > .apart-header{
-    font-size: 1.7rem;
+.apart-header{
+    font-size: 2rem;
 }
 .ut-img{
     width: 260px;
