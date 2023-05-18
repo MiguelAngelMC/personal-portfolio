@@ -1,5 +1,5 @@
 .me-img{
-    width: 260px;
+    width: 250px;
     height: auto;
     border-radius: 50%;
     display: block;
@@ -11,14 +11,15 @@
 }
 .name{
     font-size: 2.3rem;
-    padding-top: .5rem;
+    padding-top: .7rem;
 }
 .occupation{
     font-size: 1.6rem;
-    padding-top: .5rem;
+    padding-top: .7rem;
 }
 .description{
     font-size: 1.2rem;
+    padding-top: .8rem;
 }
 .section-education{
     background-color: var(--color-secondary);
@@ -53,20 +54,28 @@
 .section-tecnologies > .container > .row *{
     padding-bottom: .7rem;
 }
-.tecnologie-name-react{
-    padding-top: .8rem;
+.tecnologie-name{
+    padding-top: .3rem;
 }
 .angular-img{
-    width: 100px;
-    height: auto;
+    width: auto;
+    height: 65px;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
-.react-img{
-    width: 100px;
-    height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.link-secondary{
+    font-size: 1.8rem;
+    color: var(--color-secondary);
+    text-align: center;
+}
+.d-lg-block{
+    padding-top: .5rem;
+    font-size: 1.4rem;
+}
+.text-uppercase{
+    font-size: 1.3rem;
+}
+.txt{
+    font-size: 1.16rem;
 }
