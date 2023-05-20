@@ -31,8 +31,8 @@
     text-align: center;
 }
 .ut-img{
-    width: auto;
-    height: 135px;
+    width: 90%;
+    height: auto;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -68,9 +68,30 @@
 .section-projects{
     background-color: var(--color-secondary);
     color: var(--color-primary);
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.card{
+    width: 100%;
+    height: auto;
+}
+.card-title{
+    font-size: 1.6rem;
+}
+.card-text{
+    text-align: left;
+    font-size: 1.15rem;
+}
+.card-tecnologies{
+    text-align: justify;
+    font-size: 1.15rem;
+}
+.btn-card{
+    font-size: 1.6rem;
 }
 .link-secondary{
-    font-size: 1.8rem;
+    font-size: 2rem;
     color: var(--color-secondary);
     text-align: center;
 }
@@ -83,4 +104,8 @@
 }
 .txt{
     font-size: 1.16rem;
+    text-align: justify;
+}
+.txt-icon-contact{
+    font-size: 1.4rem;
 }
