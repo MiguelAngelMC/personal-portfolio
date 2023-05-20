@@ -28,22 +28,23 @@
 }
 .apart-header{
     font-size: 2rem;
+    text-align: center;
 }
 .ut-img{
-    width: 260px;
-    height: auto;
+    width: auto;
+    height: 135px;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 .career{
-    padding-top: 1rem;
+    padding-top: .5rem;
 }
 .career > h4{
     font-size: 1.3rem;
 }
 .emoji{
-    font-size: 2.4rem;
+    font-size: 2.1rem;
 }
 .section-tecnologies{
     padding-top: .5rem;
@@ -52,17 +53,21 @@
     text-align: center;
 }
 .section-tecnologies > .container > .row *{
-    padding-bottom: .7rem;
+    padding-bottom: 1.1rem;
 }
 .tecnologie-name{
     padding-top: .3rem;
 }
 .angular-img{
     width: auto;
-    height: 65px;
+    height: 100px;
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+.section-projects{
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
 }
 .link-secondary{
     font-size: 1.8rem;
@@ -71,7 +76,7 @@
 }
 .d-lg-block{
     padding-top: .5rem;
-    font-size: 1.4rem;
+    font-size: 1.45rem;
 }
 .text-uppercase{
     font-size: 1.3rem;
