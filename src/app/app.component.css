@@ -84,8 +84,11 @@
     font-size: 1.15rem;
 }
 .card-tecnologies{
-    text-align: justify;
-    font-size: 1.15rem;
+    text-align:left;
+    font-size: 1.25rem;
+}
+.badge{
+    margin: .1rem;
 }
 .btn-card{
     font-size: 1.6rem;
