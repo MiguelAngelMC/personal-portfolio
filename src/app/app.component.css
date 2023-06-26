@@ -4,11 +4,11 @@
 }
 .img-loader{
     width: auto;
-    height: 70vh;
+    height: 63vh;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 30vh;
+    padding-top: 37vh;
     animation: 2 heartBeat, fadeOut;
     animation-duration: 1.4s, .6s;
     animation-delay: .4s, 2.5s;
