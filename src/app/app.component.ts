@@ -7,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppComponent implements OnInit {
   title = 'personal-portfolio';
+  loading = true;
   constructor() { }
 
   ngOnInit(): void {
-    
+    setTimeout(() => {
+      this.loading=false;
+    }, 3000)
   }
 }

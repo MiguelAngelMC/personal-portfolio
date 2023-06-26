@@ -1,3 +1,18 @@
+.loader{
+    background-color: var(--color-secondary);
+    height: 100vh;
+}
+.img-loader{
+    width: auto;
+    height: 63vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 37vh;
+    animation: 2 heartBeat, fadeOut;
+    animation-duration: 1.4s, .6s;
+    animation-delay: .4s, 2.5s;
+}
 .me-img{
     width: 250px;
     height: auto;
