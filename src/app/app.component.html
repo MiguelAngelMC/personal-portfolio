@@ -1,421 +1,427 @@
-<app-header></app-header>
-<br>
-<div class="container" id="about">
-    <div class="row">
-      <div class="col-sm-12 col-lg-4 col-md-6 animate__animated animate__fadeInLeft">
-        <img src="../assets/img/me.jpg" class="me-img" alt="Miguel Montes Contreras mirror photo" loading="lazy">
-      </div>
-      <div class="col-sm-12 col-lg-8 col-md-6 animate__animated animate__fadeInUpBig">
-        <div class="greeting">
-          Hola 👋 mi nombre es
+<div *ngIf="loading" class="loader">
+  <img src="assets/img/Miguel_Montes_logo.png" class="img-loader animate__fadeOut"/>
+</div>
+
+<div *ngIf="!loading">
+  <app-header></app-header>
+  <br>
+  <div class="container" id="about">
+      <div class="row">
+        <div class="col-sm-12 col-lg-4 col-md-6 animate__animated animate__fadeInLeft">
+          <img src="../assets/img/me.jpg" class="me-img" alt="Miguel Montes Contreras mirror photo" loading="lazy">
         </div>
-        <ngx-typed-js [strings]="['Miguel Montes']" [shuffle]="true" [loop]="true" [typeSpeed]="70" [backSpeed]="20">
-          <h1 class="name"><span class="typing"></span></h1>
-        </ngx-typed-js>
-        <h2 class="occupation">Soy desarrollador web fullstack 👨‍💻</h2>
-        <div class="description">
-          <strong>Ingeniero en Desarrollo y Gestión de Software</strong> con experiencia de <strong>4 años</strong> en el mundo de la tecnología desarrollando proyectos escalables y legibles tanto del lado del <b>frontend</b> como del <b>backend</b> 💻📱
-        </div>
-      </div>
-    </div>
-</div><br><br>
-<section class="section-education animate__animated animate__fadeInRight" id="education">
-  <div class="container"><br>
-    <h3 class="apart-header">Educación 📖</h3><br><br>
-    <div class="row">
-      <div class="col-sm-12 offset-lg-1 col-lg-4 col-md-6 animate__animated animate__fadeInLeft">
-        <img src="../assets/img/UT LOGO.png" class="ut-img" alt="Universidad Tecnológica de la Costa logo" loading="lazy"><br>
-      </div>
-      <div class="col-sm-12 col-lg-5 col-md-6 animate__animated animate__fadeInRight">
-        <div class="career">
-          <h4>Ingeniería en Desarrollo y Gestión de Software</h4>
-        </div>
-        <div class="generation">
-          <h6>(2018 - 2022)</h6>
-        </div>
-        <div class="emoji">
-          🎓
+        <div class="col-sm-12 col-lg-8 col-md-6 animate__animated animate__fadeInUpBig">
+          <div class="greeting">
+            Hola 👋 mi nombre es
+          </div>
+          <ngx-typed-js [strings]="['Miguel Montes']" [shuffle]="true" [loop]="true" [typeSpeed]="70" [backSpeed]="20">
+            <h1 class="name"><span class="typing"></span></h1>
+          </ngx-typed-js>
+          <h2 class="occupation">Soy desarrollador web fullstack 👨‍💻</h2>
+          <div class="description">
+            <strong>Ingeniero en Desarrollo y Gestión de Software</strong> con experiencia de <strong>4 años</strong> en el mundo de la tecnología desarrollando proyectos escalables y legibles tanto del lado del <b>frontend</b> como del <b>backend</b> 💻📱
+          </div>
         </div>
       </div>
-    </div>
   </div><br><br>
-</section>
-<section class="section-tecnologies animate__animated animate__fadeInLeft" id="tecnologies">
-  <div class="container"><br>
-    <h3 class="apart-header">Tecnologías 🚀</h3><br><br>
+  <section class="section-education animate__animated animate__fadeInRight" id="education">
+    <div class="container"><br>
+      <h3 class="apart-header">Educación 📖</h3><br><br>
+      <div class="row">
+        <div class="col-sm-12 offset-lg-1 col-lg-4 col-md-6 animate__animated animate__fadeInLeft">
+          <img src="../assets/img/UT LOGO.png" class="ut-img" alt="Universidad Tecnológica de la Costa logo" loading="lazy"><br>
+        </div>
+        <div class="col-sm-12 col-lg-5 col-md-6 animate__animated animate__fadeInRight">
+          <div class="career">
+            <h4>Ingeniería en Desarrollo y Gestión de Software</h4>
+          </div>
+          <div class="generation">
+            <h6>(2018 - 2022)</h6>
+          </div>
+          <div class="emoji">
+            🎓
+          </div>
+        </div>
+      </div>
+    </div><br><br>
+  </section>
+  <section class="section-tecnologies animate__animated animate__fadeInLeft" id="tecnologies">
+    <div class="container"><br>
+      <h3 class="apart-header">Tecnologías 🚀</h3><br><br>
 
-    <div class="row">
-      <div class="col-sm-4 col-lg-2 col-md-4 animate__animated animate__fadeInRight">
-        <div>
-          <img src="../assets/img/HTML5.png" class="angular-img" alt="HTML5 logo" loading="lazy">
-          <div class="tecnologie-name">
-            <b>HTML</b>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-4 col-lg-2 col-md-4 animate__animated animate__fadeInLeft">
-        <div>
-          <img src="../assets/img/CSS3.png" class="angular-img" alt="CSS3 logo" loading="lazy">
-          <div class="tecnologie-name">
-            <b>CSS</b>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-4 col-lg-2 col-md-4 animate__animated animate__fadeInRight">
-        <div>
-          <img src="../assets/img/JS.png" class="angular-img" alt="JavaScript logo" loading="lazy">
-          <div class="tecnologie-name">
-            <b>JavaScript</b>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-4 col-lg-2 col-md-4 animate__animated animate__fadeInLeft">
-        <div>
-          <img src="../assets/img/Bootstrap_logo.png" class="angular-img" alt="Bootstrap logo" loading="lazy">
-          <div class="tecnologie-name">
-            <b>Bootstrap</b>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-4 col-lg-2 col-md-4 animate__animated animate__fadeInRight">
-        <div>
-          <img src="../assets/img/bulma.png" class="angular-img" alt="Bulma logo" loading="lazy">
-          <div class="tecnologie-name">
-            <b>Bulma</b>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-4 col-lg-2 col-md-4 animate__animated animate__fadeInLeft">
-        <div>
-          <img src="../assets/img/angular.png" class="angular-img" alt="Angular logo" loading="lazy">
-          <div class="tecnologie-name">
-            <b>Angular</b>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-sm-4 col-lg-2 col-md-4 animate__animated animate__fadeInRight">
-        <div>
-          <img src="../assets/img/React.png" class="angular-img" alt="React logo" loading="lazy">
-          <div class="tecnologie-name">
-            <b>React</b>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-4 col-lg-2 col-md-4 animate__animated animate__fadeInLeft">
-        <div>
-          <img src="../assets/img/NodeJS_logo.png" class="angular-img" alt="NodeJS logo" loading="lazy">
-          <div class="tecnologie-name">
-            <b>Node.js</b>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-4 col-lg-2 col-md-4 animate__animated animate__fadeInRight">
-        <div>
-          <img src="../assets/img/express.png" class="angular-img" alt="Express logo" loading="lazy">
-          <div class="tecnologie-name">
-            <b>Express</b>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-4 col-lg-2 col-md-4 animate__animated animate__fadeInLeft">
-        <div>
-          <img src="../assets/img/git.png" class="angular-img" alt="Git logo" loading="lazy">
-          <div class="tecnologie-name">
-            <b>Git</b>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-4 col-lg-2 col-md-4 animate__animated animate__fadeInRight">
-        <div>
-          <img src="../assets/img/Typescript_logo.jpeg" class="angular-img" alt="TypeScript logo" loading="lazy">
-          <div class="tecnologie-name">
-            <b>TypeScript</b>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-4 col-lg-2 col-md-4 animate__animated animate__fadeInLeft">
-        <div>
-          <img src="../assets/img/Java_logo.png" class="angular-img" alt="Java logo" loading="lazy">
-          <div class="tecnologie-name">
-            <b>Java</b>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-sm-4 col-lg-2 col-md-4 animate__animated animate__fadeInRight">
-        <div>
-          <img src="../assets/img/php_logo.png" class="angular-img" alt="PHP logo" loading="lazy">
-          <div class="tecnologie-name">
-            <b>PHP</b>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-4 col-lg-2 col-md-4 animate__animated animate__fadeInLeft">
-        <div>
-          <img src="../assets/img/JSP_logo.png" class="angular-img" alt="JSP logo" loading="lazy">
-          <div class="tecnologie-name">
-            <b>JSP</b>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-4 col-lg-2 col-md-4 animate__animated animate__fadeInRight">
-        <div>
-          <img src="../assets/img/SQL_logo.png" class="angular-img" alt="SQL logo" loading="lazy">
-          <div class="tecnologie-name">
-            <b>SQL</b>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-4 col-lg-2 col-md-4 animate__animated animate__fadeInLeft">
-        <div>
-          <img src="../assets/img/Firebase_logo.png" class="angular-img" alt="Firebase logo" loading="lazy">
-          <div class="tecnologie-name">
-            <b>Firebase</b>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-4 col-lg-2 col-md-4 animate__animated animate__fadeInRight">
-        <div>
-          <img src="../assets/img/MongoDB_logo.png" class="angular-img" alt="MongoDB logo" loading="lazy">
-          <div class="tecnologie-name">
-            <b>MongoDB</b>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-4 col-lg-2 col-md-4 animate__animated animate__fadeInLeft">
-        <div>
-          <img src="../assets/img/Postgresql_logo.png" class="angular-img" alt="PostgreSQL logo" loading="lazy">
-          <div class="tecnologie-name">
-            <b>PostgreSQL</b>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-sm-4 col-lg-2 col-md-4 animate__animated animate__fadeInRight">
-        <div>
-          <img src="../assets/img/MySQL_logo.png" class="angular-img" alt="MySQL logo" loading="lazy">
-          <div class="tecnologie-name">
-            <b>MySQL</b>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-4 col-lg-2 col-md-4 animate__animated animate__fadeInLeft">
-        <div>
-          <img src="../assets/img/GraphQL_logo.png" class="angular-img" alt="GraphQL logo" loading="lazy">
-          <div class="tecnologie-name">
-            <b>GraphQL</b>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </div><br><br>
-</section>
-<section class="section-projects animate__animated animate__fadeInRight" id="projects">
-  <div class="container"><br>
-    <h3 class="apart-header">Proyectos 💻</h3><br><br>
-    <div class="row">
-      <div class="col-sm-12 offset-lg-1 col-lg-5 col-md-6 animate__animated animate__fadeInLeft">
-        <div class="card">
-          <img src="../assets/img/osomontes_project.png" class="card-img-top" alt="Celulares Oso Montes Project">
-          <div class="card-body">
-            <h5 class="card-title">Celulares Oso Montes</h5>
-            <div class="card-text">Sitio web para un negocio de telefonía, el sitio contiene varias páginas web, se implementó:
-              <ul>
-                <li>Un formulario para registro de usuarios</li>
-                <li>Uno para iniciar sesión</li>
-                <li>Control de inventario</li>
-                <li>Consulta de estatus de los servicios:</li>
-                <ul>
-                  <li>Liberaciones</li>
-                  <li>Reparaciones</li>
-                </ul>
-                <li>Roles de usuario</li>
-                <li>Carrito de compras</li>
-                <li>Pasarela de pago</li>
-                <li>Datatables</li>
-                <li>Exportaciones a PDF</li>
-                <li>Exportaciones a CSV</li>
-                <li>Envío de correo electrónico</li>
-              </ul>
-              Los administradores tienen un un control total, los usuarios solo de vista y los desarrolladores de mantenimiento. Los administradores pueden modificar los productos, crearlos y eliminarlos, por el contrario los usuarios solo pueden ver la información y los precios, así como la localización e información de la empresa.
-            </div><br>
-            <div class="card-tecnologies">
-              <span class="badge bg-secondary">#PHP</span>
-              <span class="badge bg-secondary">#JavaScript</span>
-              <span class="badge bg-secondary">#JS</span>
-              <span class="badge bg-secondary">#AJAX</span>
-              <span class="badge bg-secondary">#HTML</span>
-              <span class="badge bg-secondary">#CSS</span>
-              <span class="badge bg-secondary">#ModeloVistaControlador</span>
-              <span class="badge bg-secondary">#MVC</span>
-              <span class="badge bg-secondary">#Bootstrap</span>
-              <span class="badge bg-secondary">#JQuery</span>
-              <span class="badge bg-secondary">#JSZip</span>
-              <span class="badge bg-secondary">#PDFMake</span>
-              <span class="badge bg-secondary">#PHPMailer</span>
-              <span class="badge bg-secondary">#SweetAlert2</span>
-              <span class="badge bg-secondary">#Datatables</span>
-            </div>
-            <br>
-            <div class="d-flex justify-content-end">
-              <a href="https://github.com/MiguelAngelMC/osomontes" class="btn btn-outline-primary btn-card" target="_blank"><i class="fab fa-github"></i>&nbsp;<i class="bi bi-chevron-right"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-12 col-lg-5 col-md-6 animate__animated animate__fadeInLeft">
-        <div class="card">
-          <img src="../assets/img/Portafolio_Miguel_Montes.png" class="card-img-top" alt="Celulares Oso Montes Project">
-          <div class="card-body">
-            <h5 class="card-title">Portafolio web</h5>
-            <div class="card-text">Una Single Page Application (SPA) para mostrar mi portafolio web, esta página web contiene:
-              <ul>
-                <li>Un navbar que contiene:</li>
-                <ul>
-                  <li>Menú de navegación</li>
-                  <li>Botón para descargar/ver mi currículum</li>
-                </ul>
-                <li>Una sección llamada 'Acerca de' donde me presento</li>
-                <li>Una sección llamada 'Educación' donde muestro mi último grado educativo</li>
-                <li>Una sección llamada 'Tecnologías' donde muestro las tecnologías que he implementado en mis proyectos</li>
-                <li>Una sección llamada 'Proyectos' donde muestro proyectos de mi GitHub</li>
-                <li>Una sección llamada 'Contacto' donde muestro un footer con mi información de contacto</li>
-              </ul>
-              Este portafolio es un testimonio de mi experiencia, habilidades y pasión por la programación. A través de mi trabajo y mi dedicación, demuestro que soy un profesional confiable y competente en el mundo del desarrollo web. ¡Explora mi portafolio y descubre mi talento en cada línea de código y diseño!.
-            </div><br>
-            <div class="card-tecnologies">
-              <span class="badge bg-secondary">#Angular</span>
-              <span class="badge bg-secondary">#TypeScript</span>
-              <span class="badge bg-secondary">#TS</span>
-              <span class="badge bg-secondary">#HTML</span>
-              <span class="badge bg-secondary">#CSS</span>
-              <span class="badge bg-secondary">#JavaScript</span>
-              <span class="badge bg-secondary">#JS</span>
-              <span class="badge bg-secondary">#Bootstrap</span>
-              <span class="badge bg-secondary">#BootstrapIcons</span>
-              <span class="badge bg-secondary">#FontAwesomeIcons</span>
-              <span class="badge bg-secondary">#AnimateCSS</span>
-              <span class="badge bg-secondary">#NgxTypedJsModule</span>
-            </div>
-            <br>
-            <div class="d-flex justify-content-end">
-              <a href="https://github.com/MiguelAngelMC/personal-portfolio" class="btn btn-outline-primary btn-card" target="_blank"><i class="fab fa-github"></i>&nbsp;<i class="bi bi-chevron-right"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div><br><br>
-</section>
-<section class="section-tecnologies animate__animated animate__fadeInUpBig" id="contact">
-  <div class="container"><br>
-    <div class="row">
-      <!-- Footer -->
-      <footer class="text-center text-lg-start">
-        <!-- Section: Social media -->
-        <section class="d-flex justify-content-center border-bottom">
-          <!-- Left -->
-          <div class="me-5 d-none d-lg-block">
-            <span>Conéctate conmigo en las redes sociales:</span>
-          </div>
-          <!-- Left -->
-
-          <!-- Right -->
+      <div class="row">
+        <div class="col-sm-4 col-lg-2 col-md-4 animate__animated animate__fadeInRight">
           <div>
-            <a href="https://www.facebook.com/MiguelonMontesC" target="_blank" class="me-4 link-secondary">
-              <i class="fab fa-facebook-f"></i>
-            </a>
-            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=montesblogz@gmail.com" class="me-4 link-secondary" target="_blank">
-              <i class="fab fa-google"></i>
-            </a>
-            <a href="https://www.instagram.com/miguel_gota_/" class="me-4 link-secondary" target="_blank">
-              <i class="fab fa-instagram"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/miguel-angel-montes-contreras-b49759158/" class="me-4 link-secondary" target="_blank">
-              <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="https://github.com/MiguelAngelMC" class="me-4 link-secondary" target="_blank">
-              <i class="fab fa-github"></i>
-            </a>
+            <img src="../assets/img/HTML5.png" class="angular-img" alt="HTML5 logo" loading="lazy">
+            <div class="tecnologie-name">
+              <b>HTML</b>
+            </div>
           </div>
-          <!-- Right -->
-        </section>
-        <!-- Section: Social media -->
+        </div>
+        <div class="col-sm-4 col-lg-2 col-md-4 animate__animated animate__fadeInLeft">
+          <div>
+            <img src="../assets/img/CSS3.png" class="angular-img" alt="CSS3 logo" loading="lazy">
+            <div class="tecnologie-name">
+              <b>CSS</b>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 col-lg-2 col-md-4 animate__animated animate__fadeInRight">
+          <div>
+            <img src="../assets/img/JS.png" class="angular-img" alt="JavaScript logo" loading="lazy">
+            <div class="tecnologie-name">
+              <b>JavaScript</b>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 col-lg-2 col-md-4 animate__animated animate__fadeInLeft">
+          <div>
+            <img src="../assets/img/Bootstrap_logo.png" class="angular-img" alt="Bootstrap logo" loading="lazy">
+            <div class="tecnologie-name">
+              <b>Bootstrap</b>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 col-lg-2 col-md-4 animate__animated animate__fadeInRight">
+          <div>
+            <img src="../assets/img/bulma.png" class="angular-img" alt="Bulma logo" loading="lazy">
+            <div class="tecnologie-name">
+              <b>Bulma</b>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 col-lg-2 col-md-4 animate__animated animate__fadeInLeft">
+          <div>
+            <img src="../assets/img/angular.png" class="angular-img" alt="Angular logo" loading="lazy">
+            <div class="tecnologie-name">
+              <b>Angular</b>
+            </div>
+          </div>
+        </div>
+      </div>
 
-        <!-- Section: Links  -->
-        <section>
-          <div class="container text-center text-md-start mt-5">
-            <!-- Grid row -->
-            <div class="row">
-              <!-- Grid column -->
-              <div class="col-sm-12 col-md-3 col-lg-4 col-xl-4 mx-auto mb-4">
-                <!-- Content -->
-                <h6 class="text-uppercase fw-bold">
-                  <i class="bi bi-laptop"></i> &nbsp;Miguel Montes
-                </h6>
-                <div class="txt">
-                  <i>"No necesitamos magia para cambiar el mundo porque ya tenemos ese poder en nuestro interior, tenemos el poder de imaginar un mundo mejor"</i><br><br>
-                  <div class="d-flex justify-content-end">
-                    <b><i>- J.K. Rowling</i></b>
+      <div class="row">
+        <div class="col-sm-4 col-lg-2 col-md-4 animate__animated animate__fadeInRight">
+          <div>
+            <img src="../assets/img/React.png" class="angular-img" alt="React logo" loading="lazy">
+            <div class="tecnologie-name">
+              <b>React</b>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 col-lg-2 col-md-4 animate__animated animate__fadeInLeft">
+          <div>
+            <img src="../assets/img/NodeJS_logo.png" class="angular-img" alt="NodeJS logo" loading="lazy">
+            <div class="tecnologie-name">
+              <b>Node.js</b>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 col-lg-2 col-md-4 animate__animated animate__fadeInRight">
+          <div>
+            <img src="../assets/img/express.png" class="angular-img" alt="Express logo" loading="lazy">
+            <div class="tecnologie-name">
+              <b>Express</b>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 col-lg-2 col-md-4 animate__animated animate__fadeInLeft">
+          <div>
+            <img src="../assets/img/git.png" class="angular-img" alt="Git logo" loading="lazy">
+            <div class="tecnologie-name">
+              <b>Git</b>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 col-lg-2 col-md-4 animate__animated animate__fadeInRight">
+          <div>
+            <img src="../assets/img/Typescript_logo.jpeg" class="angular-img" alt="TypeScript logo" loading="lazy">
+            <div class="tecnologie-name">
+              <b>TypeScript</b>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 col-lg-2 col-md-4 animate__animated animate__fadeInLeft">
+          <div>
+            <img src="../assets/img/Java_logo.png" class="angular-img" alt="Java logo" loading="lazy">
+            <div class="tecnologie-name">
+              <b>Java</b>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-4 col-lg-2 col-md-4 animate__animated animate__fadeInRight">
+          <div>
+            <img src="../assets/img/php_logo.png" class="angular-img" alt="PHP logo" loading="lazy">
+            <div class="tecnologie-name">
+              <b>PHP</b>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 col-lg-2 col-md-4 animate__animated animate__fadeInLeft">
+          <div>
+            <img src="../assets/img/JSP_logo.png" class="angular-img" alt="JSP logo" loading="lazy">
+            <div class="tecnologie-name">
+              <b>JSP</b>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 col-lg-2 col-md-4 animate__animated animate__fadeInRight">
+          <div>
+            <img src="../assets/img/SQL_logo.png" class="angular-img" alt="SQL logo" loading="lazy">
+            <div class="tecnologie-name">
+              <b>SQL</b>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 col-lg-2 col-md-4 animate__animated animate__fadeInLeft">
+          <div>
+            <img src="../assets/img/Firebase_logo.png" class="angular-img" alt="Firebase logo" loading="lazy">
+            <div class="tecnologie-name">
+              <b>Firebase</b>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 col-lg-2 col-md-4 animate__animated animate__fadeInRight">
+          <div>
+            <img src="../assets/img/MongoDB_logo.png" class="angular-img" alt="MongoDB logo" loading="lazy">
+            <div class="tecnologie-name">
+              <b>MongoDB</b>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 col-lg-2 col-md-4 animate__animated animate__fadeInLeft">
+          <div>
+            <img src="../assets/img/Postgresql_logo.png" class="angular-img" alt="PostgreSQL logo" loading="lazy">
+            <div class="tecnologie-name">
+              <b>PostgreSQL</b>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-4 col-lg-2 col-md-4 animate__animated animate__fadeInRight">
+          <div>
+            <img src="../assets/img/MySQL_logo.png" class="angular-img" alt="MySQL logo" loading="lazy">
+            <div class="tecnologie-name">
+              <b>MySQL</b>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 col-lg-2 col-md-4 animate__animated animate__fadeInLeft">
+          <div>
+            <img src="../assets/img/GraphQL_logo.png" class="angular-img" alt="GraphQL logo" loading="lazy">
+            <div class="tecnologie-name">
+              <b>GraphQL</b>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div><br><br>
+  </section>
+  <section class="section-projects animate__animated animate__fadeInRight" id="projects">
+    <div class="container"><br>
+      <h3 class="apart-header">Proyectos 💻</h3><br><br>
+      <div class="row">
+        <div class="col-sm-12 offset-lg-1 col-lg-5 col-md-6 animate__animated animate__fadeInLeft">
+          <div class="card">
+            <img src="../assets/img/osomontes_project.png" class="card-img-top" alt="Celulares Oso Montes Project">
+            <div class="card-body">
+              <h5 class="card-title">Celulares Oso Montes</h5>
+              <div class="card-text">Sitio web para un negocio de telefonía, el sitio contiene varias páginas web, se implementó:
+                <ul>
+                  <li>Un formulario para registro de usuarios</li>
+                  <li>Uno para iniciar sesión</li>
+                  <li>Control de inventario</li>
+                  <li>Consulta de estatus de los servicios:</li>
+                  <ul>
+                    <li>Liberaciones</li>
+                    <li>Reparaciones</li>
+                  </ul>
+                  <li>Roles de usuario</li>
+                  <li>Carrito de compras</li>
+                  <li>Pasarela de pago</li>
+                  <li>Datatables</li>
+                  <li>Exportaciones a PDF</li>
+                  <li>Exportaciones a CSV</li>
+                  <li>Envío de correo electrónico</li>
+                </ul>
+                Los administradores tienen un un control total, los usuarios solo de vista y los desarrolladores de mantenimiento. Los administradores pueden modificar los productos, crearlos y eliminarlos, por el contrario los usuarios solo pueden ver la información y los precios, así como la localización e información de la empresa.
+              </div><br>
+              <div class="card-tecnologies">
+                <span class="badge bg-secondary">#PHP</span>
+                <span class="badge bg-secondary">#JavaScript</span>
+                <span class="badge bg-secondary">#JS</span>
+                <span class="badge bg-secondary">#AJAX</span>
+                <span class="badge bg-secondary">#HTML</span>
+                <span class="badge bg-secondary">#CSS</span>
+                <span class="badge bg-secondary">#ModeloVistaControlador</span>
+                <span class="badge bg-secondary">#MVC</span>
+                <span class="badge bg-secondary">#Bootstrap</span>
+                <span class="badge bg-secondary">#JQuery</span>
+                <span class="badge bg-secondary">#JSZip</span>
+                <span class="badge bg-secondary">#PDFMake</span>
+                <span class="badge bg-secondary">#PHPMailer</span>
+                <span class="badge bg-secondary">#SweetAlert2</span>
+                <span class="badge bg-secondary">#Datatables</span>
+              </div>
+              <br>
+              <div class="d-flex justify-content-end">
+                <a href="https://github.com/MiguelAngelMC/osomontes" class="btn btn-outline-primary btn-card" target="_blank"><i class="fab fa-github"></i>&nbsp;<i class="bi bi-chevron-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-lg-5 col-md-6 animate__animated animate__fadeInLeft">
+          <div class="card">
+            <img src="../assets/img/Portafolio_Miguel_Montes.png" class="card-img-top" alt="Celulares Oso Montes Project">
+            <div class="card-body">
+              <h5 class="card-title">Portafolio web</h5>
+              <div class="card-text">Una Single Page Application (SPA) para mostrar mi portafolio web, esta página web contiene:
+                <ul>
+                  <li>Un navbar que contiene:</li>
+                  <ul>
+                    <li>Menú de navegación</li>
+                    <li>Botón para descargar/ver mi currículum</li>
+                  </ul>
+                  <li>Una sección llamada 'Acerca de' donde me presento</li>
+                  <li>Una sección llamada 'Educación' donde muestro mi último grado educativo</li>
+                  <li>Una sección llamada 'Tecnologías' donde muestro las tecnologías que he implementado en mis proyectos</li>
+                  <li>Una sección llamada 'Proyectos' donde muestro proyectos de mi GitHub</li>
+                  <li>Una sección llamada 'Contacto' donde muestro un footer con mi información de contacto</li>
+                </ul>
+                Este portafolio es un testimonio de mi experiencia, habilidades y pasión por la programación. A través de mi trabajo y mi dedicación, demuestro que soy un profesional confiable y competente en el mundo del desarrollo web. ¡Explora mi portafolio y descubre mi talento en cada línea de código y diseño!.
+              </div><br>
+              <div class="card-tecnologies">
+                <span class="badge bg-secondary">#Angular</span>
+                <span class="badge bg-secondary">#TypeScript</span>
+                <span class="badge bg-secondary">#TS</span>
+                <span class="badge bg-secondary">#HTML</span>
+                <span class="badge bg-secondary">#CSS</span>
+                <span class="badge bg-secondary">#JavaScript</span>
+                <span class="badge bg-secondary">#JS</span>
+                <span class="badge bg-secondary">#Bootstrap</span>
+                <span class="badge bg-secondary">#BootstrapIcons</span>
+                <span class="badge bg-secondary">#FontAwesomeIcons</span>
+                <span class="badge bg-secondary">#AnimateCSS</span>
+                <span class="badge bg-secondary">#NgxTypedJsModule</span>
+              </div>
+              <br>
+              <div class="d-flex justify-content-end">
+                <a href="https://github.com/MiguelAngelMC/personal-portfolio" class="btn btn-outline-primary btn-card" target="_blank"><i class="fab fa-github"></i>&nbsp;<i class="bi bi-chevron-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><br><br>
+  </section>
+  <section class="section-tecnologies animate__animated animate__fadeInUpBig" id="contact">
+    <div class="container"><br>
+      <div class="row">
+        <!-- Footer -->
+        <footer class="text-center text-lg-start">
+          <!-- Section: Social media -->
+          <section class="d-flex justify-content-center border-bottom">
+            <!-- Left -->
+            <div class="me-5 d-none d-lg-block">
+              <span>Conéctate conmigo en las redes sociales:</span>
+            </div>
+            <!-- Left -->
+
+            <!-- Right -->
+            <div>
+              <a href="https://www.facebook.com/MiguelonMontesC" target="_blank" class="me-4 link-secondary">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=montesblogz@gmail.com" class="me-4 link-secondary" target="_blank">
+                <i class="fab fa-google"></i>
+              </a>
+              <a href="https://www.instagram.com/miguel_gota_/" class="me-4 link-secondary" target="_blank">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/miguel-angel-montes-contreras-b49759158/" class="me-4 link-secondary" target="_blank">
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a href="https://github.com/MiguelAngelMC" class="me-4 link-secondary" target="_blank">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+            <!-- Right -->
+          </section>
+          <!-- Section: Social media -->
+
+          <!-- Section: Links  -->
+          <section>
+            <div class="container text-center text-md-start mt-5">
+              <!-- Grid row -->
+              <div class="row">
+                <!-- Grid column -->
+                <div class="col-sm-12 col-md-3 col-lg-4 col-xl-4 mx-auto mb-4">
+                  <!-- Content -->
+                  <h6 class="text-uppercase fw-bold">
+                    <i class="bi bi-laptop"></i> &nbsp;Miguel Montes
+                  </h6>
+                  <div class="txt">
+                    <i>"No necesitamos magia para cambiar el mundo porque ya tenemos ese poder en nuestro interior, tenemos el poder de imaginar un mundo mejor"</i><br><br>
+                    <div class="d-flex justify-content-end">
+                      <b><i>- J.K. Rowling</i></b>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <!-- Grid column -->
+                <!-- Grid column -->
 
-              <!-- Grid column -->
-              <div class="col-sm-12 col-md-3 col-lg-4 col-xl-3">
-                <!-- Links -->
-                <h6 class="text-uppercase fw-bold">
-                  Enlaces útiles
-                </h6>
-                <p class="txt">
-                  <a href="#about" class="text-reset">Acerca de</a>
-                </p>
-                <p class="txt">
-                  <a href="#education" class="text-reset">Educación</a>
-                </p>
-                <p class="txt">
-                  <a href="#tecnologies" class="text-reset">Tecnologías</a>
-                </p>
-                <p class="txt">
-                  <a href="#projects" class="text-reset">Proyectos</a>
-                </p>
-              </div>
-              <!-- Grid column -->
+                <!-- Grid column -->
+                <div class="col-sm-12 col-md-3 col-lg-4 col-xl-3">
+                  <!-- Links -->
+                  <h6 class="text-uppercase fw-bold">
+                    Enlaces útiles
+                  </h6>
+                  <p class="txt">
+                    <a href="#about" class="text-reset">Acerca de</a>
+                  </p>
+                  <p class="txt">
+                    <a href="#education" class="text-reset">Educación</a>
+                  </p>
+                  <p class="txt">
+                    <a href="#tecnologies" class="text-reset">Tecnologías</a>
+                  </p>
+                  <p class="txt">
+                    <a href="#projects" class="text-reset">Proyectos</a>
+                  </p>
+                </div>
+                <!-- Grid column -->
 
-              <!-- Grid column -->
-              <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 ">
-                <!-- Links -->
-                <h6 class="text-uppercase fw-bold">Contacto</h6>
-                <p class="txt"><i class="fas fa-home me-1 txt-icon-contact"></i> Santiago Ixcuintla, Nayarit</p>
-                <p class="txt">
-                  <i class="fas fa-envelope me-1 txt-icon-contact"></i>
-                  montesblogz@gmail.com
-                </p>
-                <p class="txt"><i class="fas fa-phone me-1 txt-icon-contact"></i> 323 104 6576&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                <!-- Grid column -->
+                <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 ">
+                  <!-- Links -->
+                  <h6 class="text-uppercase fw-bold">Contacto</h6>
+                  <p class="txt"><i class="fas fa-home me-1 txt-icon-contact"></i> Santiago Ixcuintla, Nayarit</p>
+                  <p class="txt">
+                    <i class="fas fa-envelope me-1 txt-icon-contact"></i>
+                    montesblogz@gmail.com
+                  </p>
+                  <p class="txt"><i class="fas fa-phone me-1 txt-icon-contact"></i> 323 104 6576&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                </div>
+                <!-- Grid column -->
               </div>
-              <!-- Grid column -->
+              <!-- Grid row -->
             </div>
-            <!-- Grid row -->
+          </section>
+          <!-- Section: Links  -->
+          <!-- Copyright -->
+          <div class="text-center">
+            © 2023 Copyright:
+            <a class="text-reset fw-bold" href="https://miguel-montes-contreras.web.app/">Miguel Montes</a>
           </div>
-        </section>
-        <!-- Section: Links  -->
-        <!-- Copyright -->
-        <div class="text-center">
-          © 2023 Copyright:
-          <a class="text-reset fw-bold" href="https://miguel-montes-contreras.web.app/">Miguel Montes</a>
-        </div>
-        <!-- Copyright -->
-      </footer>
-      <!-- Footer -->
+          <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
+      </div>
     </div>
-  </div>
-</section>
+  </section>
+</div>
