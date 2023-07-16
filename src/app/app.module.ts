@@ -3,7 +3,12 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+
+//components
 import { HeaderComponent } from './components/header/header.component';
+
+//services
+import { ThemeService } from './services/theme/theme.service';
 
 //Dependency
 import {NgxTypedJsModule} from 'ngx-typed-js';
@@ -18,7 +23,7 @@ import {NgxTypedJsModule} from 'ngx-typed-js';
     AppRoutingModule,
     NgxTypedJsModule,
   ],
-  providers: [],
+  providers: [ThemeService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
