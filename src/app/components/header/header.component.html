@@ -1,4 +1,4 @@
-<nav class="navbar bg-primary navbar-expand-lg animate__animated animate__slideInDown" data-bs-theme="dark">
+<nav class="navbar navbar-expand-lg animate__animated animate__slideInDown" [ngClass]="{'navbar-dark': darkMode, 'navbar-light': darkMode === false}">
     <div class="container-fluid">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -6,7 +6,7 @@
       <a class="navbar-brand"><i class="bi bi-laptop"></i></a>
       <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
         
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <ul class="navbar-nav m-auto mb-2 mb-lg-0">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#about">Acerca de</a>
           </li>
@@ -24,8 +24,12 @@
           </li>
         </ul>
       </div>
-      <div class="d-flex">
-        <a href="../../../assets/files/MiguelMontesContreras(CV).pdf" download="MiguelMontes(CV)"><button class="btn btn-light txt-button">Currículum <i class="bi bi-file-earmark-arrow-down button-icon"></i></button></a>
+      <div class="d-flex cv-container">
+        <a href="../../../assets/files/Miguel-Montes-CV-EN.pdf" download="MiguelMontes(CV)"><button class="btn txt-button" [ngClass]="{'btn-light': darkMode, 'btn-dark': darkMode === false}">CV <i class="bi bi-file-earmark-arrow-down button-icon"></i></button></a>
+      </div>
+      <div class="form-switch d-flex">
+        <input class="form-check-input button-icon darkmode-container" type="checkbox" role="switch" id="flexSwitchCheckDefault" (change)="checkCheckBoxvalue($event.target)" [checked]="darkMode">
+        <label class="form-check-label darkmode-container" for="flexSwitchCheckDefault">&nbsp;&nbsp;<i class="bi bi-moon-fill button-icon"></i></label>
       </div>
     </div>
   </nav>

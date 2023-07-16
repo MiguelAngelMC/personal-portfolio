@@ -1,8 +1,12 @@
 .navbar{
-    box-shadow: 0px 3px 6px #00000029;
+    /*box-shadow: 0px 3px 6px #00000029;*/
+    background-color: transparent !important;
 }
 .nav-link{
     font-size: 1.1rem;
+}
+.nav-link:hover{
+    opacity: 0.7;
 }
 .bi-laptop{
     font-size: 2.5rem;
@@ -12,4 +16,10 @@
 }
 .button-icon{
     font-size: 1.3rem;
+}
+.cv-container{
+    margin-right: 2%;
+}
+.darkmode-container{
+    cursor: pointer;
 }
