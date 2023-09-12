@@ -36,6 +36,9 @@ html, body{
     .invert-loader{
         filter: invert(100%);
     }
+    .invert-navbar-brand-img{
+        filter: invert(100%);
+    }
     .fab{
         color: var(--color-primary);
     }
@@ -53,6 +56,9 @@ html, body{
     .invert{
         filter: invert(0%);
     }
+    .invert-navbar-brand-img{
+        filter: invert(100%);
+    }
     .fab{
         color: var(--color-primary);
     }
@@ -69,6 +75,9 @@ html, body{
     color: var(--color-secondary);
     .invert{
         filter: invert(100%);
+    }
+    .invert-navbar-brand-img{
+        filter: invert(0%);
     }
     .fab{
         color: var(--color-secondary);
