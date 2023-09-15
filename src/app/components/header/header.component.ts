@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 import { ThemeService } from '../../services/theme/theme.service';
 
 @Component({
@@ -24,6 +24,10 @@ export class HeaderComponent implements OnInit {
     if(this.colorScheme === 'dark'){
       this.darkMode = true;
     }
+  }
+
+  scroll(id: string){
+    document.getElementById(id)?.scrollIntoView({behavior: "smooth"});
   }
 
   checkCheckBoxvalue(event: any){
